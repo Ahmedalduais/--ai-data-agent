@@ -269,14 +269,7 @@ npm run build
 NODE_ENV=production npm start
 ```
 
-### النشر على السحابة
 
-التطبيق متوافق مع:
-- **Heroku**
-- **AWS EC2**
-- **Google Cloud Platform**
-- **DigitalOcean**
-- **Azure**
 
 ---
 
@@ -284,11 +277,15 @@ NODE_ENV=production npm start
 
 نرحب بمساهماتكم! يرجى اتباع الخطوات التالية:
 
-1. **Fork** المستودع
+1. **Fork** المستودع من: https://github.com/Ahmedalduais/--ai-data-agent
 2. إنشاء فرع جديد (`git checkout -b feature/amazing-feature`)
 3. تنفيذ التغييرات (`git commit -m 'Add amazing feature'`)
 4. رفع التغييرات (`git push origin feature/amazing-feature`)
-5. فتح **Pull Request**
+5. فتح **Pull Request** إلى المستودع الأصلي
+
+### للتواصل مع المطور
+- 📧 البريد الإلكتروني: [ahmedaldouois@gmail.com](mailto:ahmedaldouois@gmail.com)
+- 🐙 GitHub: [@Ahmedalduais](https://github.com/Ahmedalduais)
 
 ### إرشادات المساهمة
 
