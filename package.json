@@ -1,0 +1,53 @@
+{
+  "name": "ai-data-agent",
+  "version": "1.0.0",
+  "description": "وكيل ذكاء صناعي لتحليل البيانات باستخدام LangChain وOllama وMySQL",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "security-check": "npm audit",
+    "setup-db": "mysql -u root -p < database-schema.sql",
+    "lint": "eslint backend/ --ext .js",
+    "format": "prettier --write backend/ frontend/"
+  },
+  "dependencies": {
+    "@langchain/community": "^0.0.32",
+    "@langchain/core": "^0.1.27",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "langchain": "^0.0.200",
+    "mysql2": "^3.6.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "eslint": "^8.55.0",
+    "prettier": "^3.1.1"
+  },
+  "keywords": [
+    "langchain",
+    "ollama",
+    "mysql",
+    "ai",
+    "express",
+    "arabic",
+    "data-analysis",
+    "chatbot",
+    "gemini"
+  ],
+  "author": "المهندس أحمد الدعيس <ahmedaldouois@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ahmedalduais/--ai-data-agent.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ahmedalduais/--ai-data-agent/issues"
+  },
+  "homepage": "https://github.com/Ahmedalduais/--ai-data-agent#readme"
+}

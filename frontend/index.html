@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>وكيل البيانات الذكي</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* تأكد من أن الرسم البياني له ارتفاع ثابت ولا يتمدد بشكل غير محدود */
+    #result-chart-container {
+      height: 400px;
+      position: relative;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    #result-chart {
+      max-height: 100%;
+      width: 100% !important;
+      height: 100% !important;
+    }
+    /* تحسين مظهر الجدول */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      padding: 8px;
+      text-align: right;
+    }
+    th {
+      background-color: #f3f4f6;
+    }
+    /* إضافة تأثيرات بصرية للتحسين */
+    .chart-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    #result-container {
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    #data-analysis {
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+<body class="bg-gray-100 p-4">
+  <div class="container mx-auto">
+    <div class="flex flex-row-reverse gap-4">
+      <!-- منطقة الدردشة (على اليمين) -->
+      <div class="w-1/3 bg-white rounded shadow p-4">
+        <h1 class="text-xl mb-4 font-bold flex items-center gap-4">
+        وكيل الذكاء الصناعي المبرمج  
+          <select id="model-select" class="border rounded p-1 text-sm">
+            <!-- سيتم تعبئة الخيارات تلقائياً -->
+          </select>
+        </h1>
+        <div id="chat-box" class="mb-4 h-96 overflow-y-auto border p-2 bg-gray-50"></div>
+        <form id="chat-form" class="flex gap-2">
+          <input id="user-input" class="flex-1 border rounded p-2" placeholder="اكتب سؤالك..." autocomplete="off" />
+          <button class="bg-blue-500 text-white px-4 rounded" type="submit">إرسال</button>
+        </form>
+      </div>
+
+      <!-- منطقة عرض البيانات (على اليسار) -->
+      <div class="w-2/3 bg-white rounded shadow p-4">
+        <div id="result-table" class="mb-6"></div>
+        <div id="result-container">
+          <div id="result-chart-container" class="mb-4">
+            <canvas id="result-chart"></canvas>
+          </div>
+          <!-- عنصر تحليل البيانات سيتم إنشاؤه ديناميكياً -->
+        </div>
+      </div>
+      <div>
+      </div>
+    </div>
+  </div>
+
+  <!-- فوتر حقوق الملكية -->
+  <footer class="mt-8 py-4 text-center text-gray-600 border-t border-gray-200">
+    <div class="container mx-auto">
+      <p>جميع الحقوق محفوظة &copy; 2025 المهندس أحمد الدعيس</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="app.js"></script>
+  <script src="chart.js"></script>
+  <script src="table.js"></script>
+</body>
+</html>
